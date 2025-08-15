@@ -1,6 +1,6 @@
 # PX Notifications
 
-A modern, clean notification system for FiveM servers with smooth animations and easy integration.
+A modern, clean notification system for FiveM servers with smooth animations and easy integration. EchoRP Inspired
 
 ## Features
 
