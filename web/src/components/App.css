@@ -1,0 +1,160 @@
+/* Body background image */
+body {
+  background-image: url('https://i.imgur.com/vDGEfYg.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Notification System Styles */
+.notification-container {
+  position: fixed;
+  top: 80px;
+  left: 15px;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.notification-item {
+  background: rgba(12, 24, 68, 0.5);
+  border-radius: 0px;
+  margin-bottom: 10px;
+  width: fit-content;
+  min-width: 80px;
+  max-width: 400px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  animation: slideInLeft 0.3s ease-out;
+  pointer-events: auto;
+  position: relative;
+}
+
+.notification-item::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 0px;
+  width: 2px;
+  height: 100%;
+  background-color: #FFF500;
+}
+
+.notification-content {
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.notification-icon {
+  color: #ffffff;
+  font-size: 16px;
+  min-width: 18px;
+  text-align: center;
+}
+
+.notification-message {
+  color: #ffffff;
+  font-family: 'Oswald', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  text-align: left;
+  flex: 1;
+}
+
+/* Animation for notification entry */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animation for notification exit */
+.notification-item.removing {
+  animation: slideOutLeft 0.3s ease-in forwards;
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+/* Slide out animation for notifications */
+.notification-item.slide-out {
+  animation: slideOutLeft 0.3s ease-in forwards;
+}
+
+/* Different notification types - separate colored lines */
+.notification-item.info::before {
+  background-color: #FFF500;
+}
+
+.notification-item.success::before {
+  background-color: #3aee58;
+}
+
+.notification-item.warning::before {
+  background-color: #FFF500;
+}
+
+.notification-item.error::before {
+  background-color: #FC5656;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .notification-container {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+  }
+  
+  .notification-item {
+    max-width: none;
+    min-width: auto;
+  }
+}
+
+/* Keep the original styles for backward compatibility */
+.nui-wrapper {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+pre {
+  counter-reset:line-numbering;
+  background:#2c3e50;
+  padding:12px 0px 14px 0;
+  color:#ecf0f1;
+  line-height:140%;
+}
+
+.popup-thing {
+  background: #282c34;
+  border-radius: 10px;
+  width: 500px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
