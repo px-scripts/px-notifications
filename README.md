@@ -140,3 +140,33 @@ function QBCore.Functions.Notify(text, texttype, length, icon)
     exports['px-notifications']:ShowNotification(message, pxType, length, icon)
 end
 ```
+---
+
+## 📌 Contributing
+
+We welcome contributions from the community! 🎉
+
+* Found a bug? Open an issue
+* Have an idea? Submit a pull request
+* Want to improve the design? Share your suggestions
+
+Every contribution helps make **PX Notifications** better for everyone 🚀
+
+---
+
+## 🌍 Community & Support
+
+Need help or want to showcase your custom setup?
+
+* Join our Discord *([PX Scripts](https://discord.gg/EvnYVr4S7Y))*
+* Open an issue on GitHub
+* Share screenshots of how you use PX Notifications in your server!
+
+We’d love to see what the community builds with it 💙
+
+---
+
+## 📜 License
+
+PX Notifications is released under the **MIT License** – free to use, modify, and share. Please give credit to **PX Scripts** when redistributing 🙏
+
