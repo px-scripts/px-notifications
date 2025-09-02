@@ -2,7 +2,7 @@
 
 A modern, clean notification system for FiveM servers with smooth animations and easy integration. EchoRP Inspired
 
-![PX Notifications Preview]((https://cdn.discordapp.com/attachments/1234585384269385882/1412574826454978560/NOTIFICATIONS_1.png?ex=68b8ca52&is=68b778d2&hm=c38942811134265df6a3fe86cb4dc294f0b742296b8e37777e13481440fafcc8&))
+![PX Notifications Preview](https://cdn.discordapp.com/attachments/1234585384269385882/1412574826454978560/NOTIFICATIONS_1.png)
 
 ## Features
 
