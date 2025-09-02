@@ -144,7 +144,8 @@ end
 ```
 
 ### Qbox Integration Not tested yet [W.I.P]
-```
+
+```lua
 function functions.Notify(message, source, text, notifyType, duration, subTitle, notifyPosition, notifyStyle, notifyIcon, notifyIconColor)
     exports['px-notifications']:ShowNotification(message, text, notifyType, duration, subTitle or nil, notifyPosition or nil, notifyStyle or nil, notifyIcon or nil, notifyIconColor or nil, source)
 end
